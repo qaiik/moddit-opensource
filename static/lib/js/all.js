@@ -72,3 +72,9 @@ blacket.requests.get("/worker/config", (data) => {
     if (blacket.config.path !== "") $("head").append(`<title>${blacket.config.path[0].toUpperCase() + blacket.config.path.slice(1)} | ${blacket.config.name}</title>`);
     else $("head").append(`<title>${blacket.config.name}</title>`);
 });
+
+blacket.requests.get("/worker/user", (data) => {
+
+    if (data.error && !["login", "", "register"].includes(location.pathname.split("/").at(-1))) location.href = "/login"
+    blacket.user = data
+})

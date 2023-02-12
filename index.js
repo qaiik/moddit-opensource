@@ -18,6 +18,13 @@ const db = new f.instance(
 	decodingf = f.AES_DECODER(process.env.DB_PASS)
 );
 db.init();
+
+app.use(session({
+	secret: process.env.SECRET,
+	saveUninitialized: false,
+	resave: false
+}));
+
 const m = require('./middle/setupMiddle')
 m({app, io, db, session, env: process.env})
 

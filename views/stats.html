@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/lib/css/game.css" />
+    <script src="./lib/js/socket.js"></script>
+    <script src="./lib/js/jquery.js"></script>
+    <script src="./lib/js/all.js"></script>
+    <script src="./lib/js/stats.js"></script>
+    <script src="./lib/js/game.js"></script>
+    <script defer src="./lib/js/logicstats.js"></script>
+    <meta name="keywords"
+        content="blooket, blacket, private server, xotic, blacket private server, blooket private server">
+</head>
+
+<body>
+    <div class="styles__sidebar___1XqWi-camelCase">
+        <a href="/" id="big-name" class="styles__blooketText___1pMBG-camelCase">name</a>
+        <div>
+
+        </div>
+        <div class="styles__bottomRow___3OozA-camelCase">
+        </div>
+    </div>
+    <div id="app">
+        <div>
+            <div>
+                <div class="styles__topRightRow___dQvxc-camelCase">
+                </div>
+            </div>
+            <div class="styles__background___2J-JA-camelCase">
+                <div class="styles__blooksBackground___3oQ7Y-camelCase"
+                    style="background-image: url('/content/background.png');"></div>
+            </div>
+            <div class="arts__profileBodyMax___3SXtp-camelCase" style="max-width: 1266px;">
+                <div class="styles__fullContainer___3Wl6C-camelCase">
+                    <div class="styles__headerRow___3mqZi-camelCase">
+                        <div class="styles__headerLeft___1Hu3N-camelCase">
+                            <div class="styles__headerLeftRow___8vTJL-camelCase">
+                                <div class="styles__headerBlookContainer___36zY5-camelCase" role="button" tabindex="0">
+                                    <div
+                                        class="styles__blookContainer___36LK2-camelCase styles__headerBlook___DdSHd-camelCase">
+                                    </div>
+                                </div>
+                                <div class="styles__headerInfo___1oWlb-camelCase">
+                                    <div class="styles__headerBanner___3Uuuk-camelCase">
+                                        <img loading="lazy" src="/content/banners/Default.png"
+                                            class="styles__headerBg___12ogR-camelCase" draggable="false">
+                                        <div class="styles__headerName___1GBcl-camelCase">username</div>
+                                        <div class="styles__headerTitle___24Ox2-camelCase">role</div>
+                                    </div>
+                                    <div class="styles__headerBadges___ffKa4-camelCase"
+                                        style="position: absolute;margin-left: 290px;display: inline-block;padding: 2.5px;">
+                                    </div>
+                                    <div class="styles__levelBarContainer___1xi-9-camelCase">
+                                        <div class="styles__levelBar___2SU0x-camelCase">
+                                            <div class="styles__levelBarInside___3FLAG-camelCase"
+                                                style="transform: scaleX(0);"></div>
+                                        </div>
+                                        <div class="styles__levelStarContainer___7ABEf-camelCase">
+                                            <img loading="lazy" src="/content/levelStar.png" alt="Star"
+                                                class="styles__levelStar___LHq_y-camelCase" draggable="false" />
+                                            <div class="styles__levelStarText___2Myxg-camelCase">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="styles__headerLeftButtons___3zGk0-camelCase" style="flex-flow: row;">
+                                <a id="viewStatsButton"
+                                    class="styles__button___1_E-G-camelCase styles__headerButton___36TRh-camelCase"
+                                    role="button" tabindex="0">
+                                    <div class="styles__shadow___3GMdH-camelCase"></div>
+                                    <div class="styles__edge___3eWfq-camelCase" style="background-color: #eb6234;">
+                                    </div>
+                                    <div class="styles__front___vcvuy-camelCase" style="background-color: #eb6234;">
+                                        <div class="styles__headerButtonInside___26e_U-camelCase"><i
+                                                class="styles__headerButtonIcon___1pOun-camelCase fas fa-search"
+                                                aria-hidden="true"></i>View Stats</div>
+                                    </div>
+                                </a>
+                                <a id="tradeButton"
+                                    class="styles__button___1_E-G-camelCase styles__headerButton___36TRh-camelCase"
+                                    role="button" tabindex="0">
+                                    <div class="styles__shadow___3GMdH-camelCase"></div>
+                                    <div class="styles__edge___3eWfq-camelCase" style="background-color: #01c774;">
+                                    </div>
+                                    <div class="styles__front___vcvuy-camelCase" style="background-color: #01c774;">
+                                        <div class="styles__headerButtonInside___26e_U-camelCase"><i
+                                                class="styles__headerButtonIcon___1pOun-camelCase fas fa-handshake"
+                                                aria-hidden="true"></i>Trade</div>
+                                    </div>
+                                </a>
+                                <a href="/discord"
+                                    class="styles__button___1_E-G-camelCase styles__headerButton___36TRh-camelCase"
+                                    role="button" tabindex="0">
+                                    <div class="styles__shadow___3GMdH-camelCase"></div>
+                                    <div class="styles__edge___3eWfq-camelCase" style="background-color: #36393f;">
+                                    </div>
+                                    <div class="styles__front___vcvuy-camelCase" style="background-color: #36393f;">
+                                        <div class="styles__headerButtonInside___26e_U-camelCase"><i
+                                                class="styles__headerButtonIcon___1pOun-camelCase fab fa-discord"
+                                                aria-hidden="true"></i>Discord</div>
+                                    </div>
+                                </a>
+                                <a href="/market"
+                                    class="styles__button___1_E-G-camelCase styles__headerButton___36TRh-camelCase"
+                                    role="button" tabindex="0">
+                                    <div class="styles__shadow___3GMdH-camelCase"></div>
+                                    <div class="styles__edge___3eWfq-camelCase"
+                                        style="background-color: rgb(255, 163, 30);"></div>
+                                    <div class="styles__front___vcvuy-camelCase"
+                                        style="background-color: rgb(255, 163, 30);">
+                                        <div class="styles__headerButtonInside___26e_U-camelCase"><i
+                                                class="styles__headerButtonIcon___1pOun-camelCase fas fa-store"
+                                                aria-hidden="true"></i>Unlock Blooks</div>
+                                    </div>
+                                </a>
+                                <a href="/blooks"
+                                    class="styles__button___1_E-G-camelCase styles__headerButton___36TRh-camelCase"
+                                    role="button" tabindex="0">
+                                    <div class="styles__shadow___3GMdH-camelCase"></div>
+                                    <div class="styles__edge___3eWfq-camelCase"
+                                        style="background-color: rgb(30, 146, 255);"></div>
+                                    <div class="styles__front___vcvuy-camelCase"
+                                        style="background-color: rgb(30, 146, 255);">
+                                        <div class="styles__headerButtonInside___26e_U-camelCase"><i
+                                                class="styles__headerButtonIcon___1pOun-camelCase fas fa-suitcase"
+                                                aria-hidden="true"></i>Manage Blooks</div>
+                                    </div>
+                                </a>
+                                <a id="claimButton"
+                                    class="styles__button___1_E-G-camelCase styles__headerButton___36TRh-camelCase"
+                                    role="button" tabindex="0">
+                                    <div class="styles__shadow___3GMdH-camelCase"></div>
+                                    <div class="styles__edge___3eWfq-camelCase" style="background-color: #00c20c;">
+                                    </div>
+                                    <div class="styles__front___vcvuy-camelCase" style="background-color: #00c20c;">
+                                        <div class="styles__headerButtonInside___26e_U-camelCase"><i aria-hidden="true"
+                                                class="styles__headerButtonIcon___1pOun-camelCase fas fa-star"></i>Claim
+                                            Tokens</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="styles__bottomContainer___3kOrb-camelCase">
+                        <div class="styles__right___13qxc-camelCase">
+                            <div class="styles__statsContainer___QnrRB-camelCase">
+                                <div class="styles__containerHeader___3xghM-camelCase">
+                                    <div class="styles__containerHeaderInside___2omQm-camelCase">Stats</div>
+                                </div>
+                                <div class="styles__topStats___3qffP-camelCase">
+                                    <div class="styles__statContainer___QKuOF-camelCase" currentitem="false">
+                                        <div class="styles__statTitle___z4wSV-camelCase">Tokens</div>
+                                        <div class="styles__statNum___5RYSd-camelCase">tokens</div>
+                                        <img loading="lazy" src="/content/tokenIcon.png"
+                                            class="styles__tokenImg___a08fY-camelCase" draggable="false" />
+                                    </div>
+                                    <div class="styles__statContainer___QKuOF-camelCase" currentitem="false">
+                                        <div class="styles__statTitle___z4wSV-camelCase">Blooks Unlocked</div>
+                                        <div class="styles__statNum___5RYSd-camelCase">blooks</div>
+                                        <img loading="lazy" src="/content/unlockIcon.png"
+                                            class="styles__statImg___3DBXt-camelCase" draggable="false" />
+                                    </div>
+                                    <div class="styles__statContainer___QKuOF-camelCase" currentitem="false">
+                                        <div class="styles__statTitle___z4wSV-camelCase">Packs Opened</div>
+                                        <div class="styles__statNum___5RYSd-camelCase">opened</div>
+                                        <img loading="lazy" src="/content/openedIcon.png"
+                                            class="styles__statImg___3DBXt-camelCase" draggable="false" />
+                                    </div>
+                                    <div class="styles__statContainer___QKuOF-camelCase" currentitem="false">
+                                        <div class="styles__statTitle___z4wSV-camelCase">Messages Sent</div>
+                                        <div class="styles__statNum___5RYSd-camelCase">messages</div>
+                                        <img loading="lazy" src="/content/messagesIcon.png"
+                                            class="styles__statImg___3DBXt-camelCase" draggable="false" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>

@@ -62,6 +62,7 @@ $(".styles__button___2hNZo-camelCase").click((event) => {
                     return;
                 }
                 blacket.stopLoading();
+                location.href = "/login"
             });
     } else {
         setTimeout(() => {

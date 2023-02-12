@@ -35,7 +35,8 @@ module.exports = ({app, db}) => {
 			blooks: {Moddit:1},
 			packsopened: 0,
 			messagessent: 0,
-			ip: req.ip
+			ip: req.ip,
+			blook: 'Moddit'
 		})
 		return res.json({error: false})
 	})
