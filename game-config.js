@@ -1,23 +1,23 @@
 module.exports = {
-  "name": "Moddit",
+  "name": "Ripoff",
   "version": "0.0.1",
-  "welcome": "Modded Blacket",
-  "description": "The first modded version of blacket, created by qaiik and r6v, based off of a game by Xotic.",
-  "pronunciation": "Moh-ditt",
-  "discord": "https://discord.gg/mhcpk6NXqh",
+  "welcome": "Blacket Ripoff",
+  "description": "The not first, non original version of Blacket, made without Xotic's permission, includes: IP Logger, Rats, and more bullshit!",
+  "pronunciation": "Rip-Off",
+  "discord": "https://discord.gg/69420ripoff.com",
   "store": {
     "plus": {
       "price": "9.99",
       "sale": {
         "price": "0.00",
-        "name": "Lovely"
+        "name": "ballpenis"
       }
     },
     "1hBooster": {
       "price": "4.99",
       "sale": {
         "price": "0.00",
-        "name": "Lovely"
+        "name": "187.5"
       }
     },
     "3hBooster": {
@@ -112,6 +112,7 @@ module.exports = {
     },
     "GitHub": {
       "link": "https://github.com/XOTlC/Blacket",
+      // it seems similar to xotics blacket github but i dont know exactly
       "icon": "fab fa-github",
       "isNews": false,
       "location": "bottom",
@@ -119,6 +120,7 @@ module.exports = {
     },
     "YouTube": {
       "link": "https://www.youtube.com/channel/UCgiSMBsgq954SX5JT7_Lm2g",
+      // i wonder whos channel this is
       "icon": "fab fa-youtube",
       "isNews": false,
       "location": "bottom",
